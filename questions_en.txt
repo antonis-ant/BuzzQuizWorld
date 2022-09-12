@@ -1,0 +1,280 @@
+Which football team won the Champions League competition in 2015-16?
+Sports
+Bayern Munchen,false
+Barcelona,false
+Real Madrid,true
+Juventus,false
+
+The biggest animal in the world is
+Nature
+The Blue Whale,true
+Elephant,false
+Polar Bear,false
+Orca Whale,false
+
+The smallest planet of our solar system is
+Space and Astronomy
+Earth,false
+Moon,false
+Saturn,false
+Pluto,true
+
+What is the speed of light?
+Space and Astronomy
+100.000 km/h,false
+200.000 km/h,false
+300.000 km/h,true
+500.000 km/h,false
+
+The football player who has scored the most goals in the UCL history is
+Sports
+Cristiano Ronaldo,true
+Leo Messi,false
+Raul,false
+Maradona,false
+
+Buenos Aires is the capital city of?
+Geography
+Brazil,false
+Argentina,true
+Mexico,false
+Chile,false
+
+How many main bones has the human being body?
+Biology
+200,false
+202,false
+204,false
+206,true
+
+Which war named as The great war?
+History
+World War I,true
+World War II,false
+American Civil War,false
+Russian Civil War,false
+
+How many books are involved in the New Testament
+History
+4,false
+12,false
+27,true
+32,false
+
+Who has elected as US President 4 times?
+History
+Donald Trump,false
+George Bush,false
+Franklin Roosevelt,true
+Grover Cleveland,false
+
+Grand Canyon is located in the continent of 
+Geography
+Asia ,false
+Europe,false
+America,true
+Africa,false
+
+Greek national basketball team won the Eurobasket in the year of
+Sports
+1986,false
+1987,true
+1988,false
+1989,false
+
+The most dangerous animal for the human being is a
+Nature
+snake,false
+mosquito,false
+fish,false
+frog,true
+
+Which planet of our solar system is the nearest to Earth?
+Space and Astronomy
+Moon,false
+Mars,false
+Hermes,false
+Aphrodite,true
+
+Who is the inventor of the Instagram App?
+Technology
+Mark Zuckerberg,false
+kevin systrom,true
+jack dorsey,false
+evan spiegel,false
+
+Which is the capital city of Australia?
+Geography
+Sidney,false
+Melbourne,false
+Brisbane,false
+Canberra,true
+
+Michael Jordan ended his career as a player of
+Sports
+Chicago Bulls,false
+L.A Lakers,false
+Washington Wizards,true 
+Miami Heat,false
+
+Who of these actors have won 2 oscar awards for Best Actor?
+Actors and Movies
+Robert de Niro,false
+Johny Depp,false
+Marlon Brando,true
+Leonardo Di Caprio,false
+
+Who is the inventor of Facebook App?
+Technology
+Mark Zuckerberg, true
+Bill Gates,false
+Steve Jobs,false
+Jack Dorsey,false
+
+Titanic was nominated for 14 oscar awards and won
+Actors and Movies
+14,false
+13,false
+12,false
+11,true
+
+Who is the leading actor in the Scarface movie ?
+Actors and Movies
+Silvestre Stalone,false
+Tom Hanks,false
+Al Pacino,true
+Brad Pitt,false
+
+The Olympic Games are repeated every
+Sports
+2 years,false
+3 years,false
+4 years,true
+5 years,false
+
+The Olympics of 1996 took place in the state of
+Sports
+Washington,false
+Los Angeles,false
+California,false
+Atlanta,true
+
+The world’s best time in the game of 100m sprint is
+Sports
+9.48 sec,false
+9.58 sec,true
+9.68 sec,false
+9.78 sec,false
+
+The famous statue Nike of Samothrake is now located in
+Art
+The Acropolis Museum,false
+The British Museum,false
+The Louvre Museum,true
+Museo de Prado,false 
+
+How many heads did the mythologic monster Hydra had?
+Mythology
+7,false
+9,true
+11,false
+13,false
+
+Who President of U.S has been murdered in a theatre?
+History
+Abraham Lincoln,true
+J.F Kennedy,false
+George Washington,false
+Franklin Roosevelt,false
+
+Which was the capital city of Greece after 1821s war of Independence?
+History
+Athens,false
+Nafplion,true
+Thessaloniki,false
+Patra,false
+
+Who is the athlete in this picture?
+Sports
+Lebron James,false
+Kobe Bryant,true
+Allen Iverson,false
+Michael Jordan,false
+Images/KobeBryant.jpg
+Who is the Formula 1 driver in this picture?
+Sports
+Michael Schumacher,false
+Jenson Button,false
+Lewis Hamilton,true
+Sebastian Vettel,false
+Images/LewisHamilton.jpg
+Who is the actor in this picture?
+Cinema
+Robert Downey Jr,true
+Johnny Depp,false
+Christian Bale,false
+Matt Damon,false
+Images/RobertDowneyJr.jpg
+Who is the Actress in this Picture?
+Cinema
+Angelina Jolie,false
+Penelope Cruz,false
+Monica Bellucci,true
+Cathrin Jeta Jones,false
+Images/MonicaBellucci.jpg
+Who is the artist that create Guernica?
+Art
+Pablo Picasso,true
+Salvador Dali,false
+Vincent van Gogh,false
+Leonardo da Vinci,false
+Images/guernica.jpg
+Empire State Building is located in
+Geography
+Dubai,false
+USA,true
+Sidney,false
+Shanghai,false
+Images/EmpireState.jpg
+The height of the Eiffel Tower is
+Geography
+224 m,false
+324 m,true
+424 m,false
+524 m,false
+
+The man in this Picture is
+Famous People
+Morgan Freeman,false
+Nelson Mandela,true
+Barack Obama,false
+Magic Johnson,false
+Images/NelsonMandela.jpg
+In this picture we can see the logo of
+Music
+Red Hot Chilli Peppers,true
+Rolling Stones,false
+ACDC,false
+Nirvana,false
+Images/RedHot.jpg
+The man in this picture is
+Politicians
+Nicolas Sarkozy,false
+Donald Trump,false
+Silvio Berlusconi,false
+Vladimir Puttin,true
+Images/vladimirputin.jpg
+The man in this picture is 
+Technology
+Bill Gates,true
+Steve Jobs,false
+Mark Zuckerberg,false
+John Rockefeller,false
+Images/BillGates.jpg
+The woman in this picture is
+Politicians
+Hillary Clinton,true
+Elizabeth Dole,false
+Michelle Obama,false
+Victoria Woodhull,false
+Images/hillary.jpg

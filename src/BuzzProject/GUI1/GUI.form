@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="P1BetButtonGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="P2BetButtonGroup">
+    </Component>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="gameMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Game"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gameMenuActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="gameMenu.setEnabled(false);"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="newSinglePlayerGameMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="New Single Game"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newSinglePlayerGameMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="newMultiplayerPlayerGameMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="New 2 Players Game"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newMultiplayerPlayerGameMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="historyMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="History"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="historyMenu.setEnabled(false);"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="showStats">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show Statistics"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="showStatsActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Buzz! Quiz World!"/>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[900, 600]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[900, 600]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="formKeyPressed"/>
+    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="formKeyReleased"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,31,0,0,3,-124"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="roundInterractionPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="roundInterractionPanel.setVisible(false);"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="705" y="0" width="180" height="300"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="fasetAnsPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="fasterAns"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="beFast1" min="-2" pref="183" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="beFast1" min="-2" pref="41" max="-2" attributes="0"/>
+                      <EmptySpace pref="234" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="beFast1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="BE FAST!"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="stopWatchPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="stopWatch"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="timerLabel" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <Component id="startTimerButton" min="-2" pref="80" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="beFast" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="beFast" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="timerLabel" min="-2" pref="57" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Component id="startTimerButton" min="-2" pref="52" max="-2" attributes="0"/>
+                      <EmptySpace pref="50" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="timerLabel">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="36" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="beFast">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Copperplate Gothic Light" size="18" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Be Fast!"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="startTimerButton">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="GO!"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="startTimerButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="betRoundPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="bet"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
+                              <Component id="P1bet250rb" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="P1bet500rb" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="P1bet750rb" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="P1bet1000rb" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="P2bet250rb" min="-2" max="-2" attributes="0"/>
+                              <Component id="P2bet500rb" min="-2" max="-2" attributes="0"/>
+                              <Component id="P2bet750rb" min="-2" max="-2" attributes="0"/>
+                              <Component id="P2bet1000rb" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="goButton" min="-2" pref="73" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="placeYourBets" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="placeYourBets" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="P1bet250rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2bet250rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="P1bet500rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2bet500rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="P1bet750rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2bet750rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="P1bet1000rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2bet1000rb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="goButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="74" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Player 1 Bet"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P1bet250rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P1BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="250"/>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="P1bet250rbStateChanged"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P1bet250rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P1bet750rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P1BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="750"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P1bet750rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P1bet500rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P1BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="500"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P1bet500rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P1bet1000rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P1BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="1000"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P1bet1000rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Player 2 Bet"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P2bet250rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P2BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="250"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P2bet250rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P2bet500rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P2BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="500"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P2bet500rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P2bet750rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P2BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="750"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P2bet750rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="P2bet1000rb">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="P2BetButtonGroup"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="1000"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="P2bet1000rbActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placeYourBets">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Place Your Bets"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="goButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Go!"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="goButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="ThermometerPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="thermometer"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel5" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace pref="238" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="PERFECT ROUND"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="blankPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="blank"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="180" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="questionPanel">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="12" y="12" width="-1" height="291"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="questImgLabel" pref="184" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="questionLabel" min="-2" pref="439" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="roundTypeLabel" min="-2" pref="338" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel4" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="questionCategoryLabel" min="-2" pref="147" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="roundTypeLabel" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" max="32767" attributes="0"/>
+                          <Component id="questionCategoryLabel" alignment="3" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="questionLabel" pref="191" max="32767" attributes="0"/>
+                      <Component id="questImgLabel" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="424" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="questionLabel">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+          <Events>
+            <EventHandler event="inputMethodTextChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="questionLabelInputMethodTextChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(&quot;&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="roundTypeLabel">
+        </Component>
+        <Component class="javax.swing.JLabel" name="questionCategoryLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;&quot;" type="code"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="questionCategoryLabel.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" Category:"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jLabel4.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="questImgLabel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="interfacePanel">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="349" width="732" height="130"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="nextRoundButton" max="32767" attributes="0"/>
+                      <Component id="nextQuestionButton" pref="129" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                  <Component id="player1Panel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="117" max="32767" attributes="0"/>
+                  <Component id="player2Panel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="nextRoundButton" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="nextQuestionButton" min="-2" pref="45" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="player1Panel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="player2Panel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="nextRoundButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Next Round"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nextRoundButtonMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextRoundButtonActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nextRoundButtonKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="nextRoundButton.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="nextQuestionButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Next Question"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nextQuestionButtonMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextQuestionButtonActionPerformed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nextQuestionButtonKeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="nextQuestionButtonKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="nextRoundButton.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Container class="javax.swing.JPanel" name="player1Panel">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="p1ControlsLabel" pref="123" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jLabel2a" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="p1nameLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="p1ScoreLabel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="p1status" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="p1StatusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                              <Component id="p1AnsLabel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p1nameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2a" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p1ScoreLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="p1ControlsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="p1AnsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="p1StatusLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="p1status" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Player 1:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1nameLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2a">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Score:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1ScoreLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1ControlsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Controls: Q,W,E,R"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1AnsLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1status">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p1StatusLabel">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="player2Panel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="p2ControlsLabel" alignment="0" pref="123" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jLabel2a_2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLabel1a_2" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="p2nameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="p2ScoreLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                      <Component id="p2AnsLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="p2Status" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="p2StatusLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1a_2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p2nameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2a_2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p2ScoreLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="p2ControlsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="p2AnsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="p2Status" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p2StatusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1a_2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Player 2:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2nameLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2a_2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Score:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2ScoreLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2ControlsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Controls: U,I,O,P"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2AnsLabel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2Status">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="p2StatusLabel">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="englishButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="English"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="englishButtonActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="770" y="380" width="90" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="greekButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Greek"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="greekButtonActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="770" y="430" width="90" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="langLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Choose a Language"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="720" y="300" width="170" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
